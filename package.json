@@ -32,7 +32,8 @@
     "lint": "eslint '**/*.ts'",
     "prettier-check": "prettier . --check",
     "prettier-write": "prettier . --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "node dist/main.js"
   },
   "lint-staged": {
     "*.ts": "eslint .",
