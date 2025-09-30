@@ -39,6 +39,10 @@
     "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/cheerio": "^0.22.35",
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
     "html-parse-stringify": "3.0.1",
     "sanitize-html": "2.14.0",
     "tinycolor2": "1.6.0"
@@ -57,7 +61,6 @@
     "eslint": "9.20.1",
     "eslint-config-prettier": "10.0.1",
     "eslint-plugin-mocha": "10.5.0",
-    "typescript-eslint": "8.24.1",
     "husky": "9.1.7",
     "lint-staged": "15.4.3",
     "mocha": "11.1.0",
@@ -65,6 +68,7 @@
     "prettier": "3.5.1",
     "rimraf": "5.0.10",
     "ts-node": "10.9.2",
-    "typescript": "5.7.3"
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.24.1"
   }
 }
