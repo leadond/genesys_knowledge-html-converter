@@ -26,7 +26,7 @@
     "clean": "rimraf dist",
     "compile": "tsc --declaration",
     "test": "mocha --require ts-node/register test/**/*.ts",
-    "scrape": "ts-node src/scraper.ts",
+    "scrape": "npm run compile && node dist/scraper.js",
     "test-jenkins": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./reports/test-result.xml",
     "coverage": "c8 npm run test",
     "coverage-jenkins": "c8 --reporter cobertura npm run test-jenkins",

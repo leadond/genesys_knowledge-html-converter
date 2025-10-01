@@ -45,7 +45,7 @@ async function scrape(url: string) {
 
   try {
     const response = await axios.get(url, { timeout: 15000 });
-    const $ = cheerio.load(response.data);
+    const $ = cheerio.load(response.data as string);
     const title = $('title').text() || 'No Title Found';
     const textContent = $('body').text();
 
@@ -124,4 +124,7 @@ async function main() {
   }
 }
 
-main();
+main().catch((err) => {
+  console.error('Scraper failed to run:', err);
+  process.exit(1);
+});
